@@ -19,7 +19,6 @@ let returnThirdIndex = function (array) {
 //Exercice 4 : Changer le 2ème élément du tableau languages par php.', function() {
 let changeSecondElement = function (array) {
   let response4 = array[1] = 'php';
-  console.log(array)
   return array;
 }
 
@@ -49,30 +48,40 @@ let removeLastElement = function (array) {
 
 //Exercice 9 : Créer un tableau associatif person. Lui ajouter les index name, age et city avec les valeurs Jean, 45, Paris.', function() {
 let createPerson = function () {
-  return 'A compléter';
+  let person = new Array();
+  person['name'] = "Jean";
+  person['age'] = 45;
+  person['city'] = "Paris";
+  return person;
 }
 
 //Exercice 10 : Retourner la valeur de l\'index nom du tableau person.', function() {
 let returnName = function (array) {
-  return 'A compléter';
+  return array['name'];
 }
 
-//Exercice 11 : Stocker tous les index du tableau person dans des variables séparées et les retourner dans une même phrase de type : "Bonjour, je suis Jean. J\'ai 45 ans et j\'habite Paris."', function() {
+//Exercice 11 : Stocker tous les index du tableau person dans des variables séparées et les retourner dans une même phrase de type : 
+//"Bonjour, je suis Jean. J\'ai 45 ans et j\'habite Paris."', function() {
 let returnSentence = function (array) {
-  return 'A compléter';
+  let name = array['name'];
+  let age = array['age'];
+  let city = array['city'];
+  let sentence = "Bonjour, je suis " + name + ". J'ai " + age + " ans et j'habite " + city + "."
+  return sentence;
 }
 
 //Exercice 12 : Transformer la variable string en tableau.', function() {
 let returnArray = function (string) {
-  return 'A compléter';
+  let response12 = string.split(',');
+  return response12;
 }
 
 //Exercice 13 : Trier le tableau array.', function() {
 let sortArray = function (array) {
-  return 'A compléter';
+  return array.sort();
 }
 
 //Exercice 14 : Transformer le tableau array en chaîne de caractères', function() {
 let returnString = function (array) {
-  return 'A compléter';
+  return array.toString();
 }
