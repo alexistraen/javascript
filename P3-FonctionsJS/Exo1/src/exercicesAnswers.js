@@ -60,6 +60,8 @@ let displayExtension = function (fileName) {
 
 //Exercice 11 : Compter le nombre d'espace dans la chaîne.
 let countSpaces = function (sentence) {
+  // autre réponse
+  // return sentence.split(' ').length -1;
   let response11 = sentence.indexOf(' ');
   let count = 0;
 
@@ -78,33 +80,31 @@ let invertSentence = function (sentence) {
 
 //Exercice 13 : Chercher si dans la chaîne de caractère se trouve "La Manu".
 let searchInSentence = function (sentence) {
+  // autre réponse
+  // return sentence.includes('La Manu');
+  // includes retourne true dans cet exemple
   let response13 = sentence.indexOf('La Manu') != -1;
   return response13;
 }
 
 //Exercice 14 : Afficher la valeur absolue d'un nombre.
 let displayAbsoluteValue = function (number) {
-  let response14 = Math.abs(number);
-  return response14;
+  return Math.abs(number);
 }
 
 //Exercice 15 : Afficher les valeurs absolues de plusieurs nombres.
 let displayAbsoluteValues = function (numbersArray) {
-  console.log(numbersArray)
-  let response15 = numbersArray.map(Math.abs);
-  
-  console.log(response15)
-  return response15;
+  return numbersArray.map(Math.abs);
 }
 
 //Exercice 16 : Calculer la surface d'un cercle en fonction de son rayon. L'arondir à l'entier le plus proche.
 let calculateArea = function (radius) {
-  response16 = Math.ceil(Math.PI * (radius * 22));
-  return response16;
+  // autre réponse
+  // return Math.round(Math.PI * Math.pow(radius,2));
+  return Math.ceil(Math.PI * (radius * 22));
 }
 
 //Exercice 17 : Calculer l'hypothènuse d\'un triangle rectangle. Arrondir à l'entier inférieur.
 let calculateHypotenuse = function (a, b) {
-  let response17 = Math.floor(Math.hypot(a, b));
-  return response17;
+  return Math.floor(Math.hypot(a, b));
 }

@@ -36,6 +36,8 @@ let addAtFirst = function (array) {
 
 //Exercice 7 : Supprimer le premier élément du tableau languages.', function() {
 let removeFirstElement = function (array) {
+  // autre réponse
+  // array.shit(); -> supprime le premier élément d'un tableau
   let response7 = array.splice('0', '1');
   return array;
 }
